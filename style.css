@@ -34,8 +34,7 @@ body {
     border: 12px solid #fff;
     box-shadow: 10px 10px 8px 4px rgba(10, 10, 10, 0.2);
 }
-.slider {
-
+.slide {
     display: flex;
     transition: all 2s ease;
 }
