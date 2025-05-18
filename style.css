@@ -1,80 +1,60 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
+    box-sizing: border-box; 
+}
+body {
     width: 100%;
-    min-height: 100vh;
+    height: 100dvbh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f4f4f4;
-    font-family: sans-serif;
-  }
-  
-  .container {
+}
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-  }
-  
-  .top {
+}
+.top {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .arrow {
-    font-size: 50px;
+}
+.arrow {
+    font-size: 100px;
     cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .arrow:hover {
-    transform: scale(1.2);
-  }
-  
-  .frame {
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+.frame {
     width: 500px;
     height: 300px;
     overflow: hidden;
     border: 12px solid #fff;
     box-shadow: 10px 10px 8px 4px rgba(10, 10, 10, 0.2);
-  }
-  
-  .slide {
+}
+.slider {
+
     display: flex;
-    transition: transform 0.5s ease;
-    /* !!! Это обязательно для прокрутки */
-  }
-  
-  .slide img {
+    transition: all 2s ease;
+}
+.image {
     width: 500px;
-    height: 300px;
+    height: auto;
     object-fit: cover;
-    flex-shrink: 0;
-  }
-  
-  .bottom {
+}
+.bottom {
     display: flex;
-    justify-content: center;
     gap: 10px;
-  }
-  
-  .button {
+}
+.button {
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    border: 1px solid #242424;
-    background-color: transparent;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    border:  1px solid #242424;
     cursor: pointer;
-  }
-  
-  .button:hover {
-    transform: scale(1.2);
-    background-color: #ccc;
-  }
+    &:hover {
+        transform: scale(1.2);
+    }
+}
