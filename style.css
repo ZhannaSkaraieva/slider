@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .arrow {
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow:hover {
+    transform: scale(1.2);
+  }
+  
+  .frame {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border: 12px solid #fff;
+    box-shadow: 10px 10px 8px 4px rgba(10, 10, 10, 0.2);
+  }
+  
+  .slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* !!! Это обязательно для прокрутки */
+  }
+  
+  .slide img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid #242424;
+    background-color: transparent;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: scale(1.2);
+    background-color: #ccc;
+  }
